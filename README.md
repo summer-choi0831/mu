@@ -11,7 +11,7 @@
 - install Azul Zulu OpenJDK 15 
   - see https://foojay.io/today/azul-zulu-openjdk-15-on-raspberry-pi/
 - checkout git project
-  - git clone {uri}
+  - git clone https://github.com/summer-choi0831/mu.git
 - build project
   - ./gradlew build
 - start spring boot
