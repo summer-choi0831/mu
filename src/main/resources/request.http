@@ -1,0 +1,92 @@
+
+### heath check
+GET http://localhost:8080/hello
+
+<> 2022-06-14T200952.200.json
+
+
+### 적립
+POST http://localhost:8080/point
+Content-Type: application/json
+
+{
+  "memberNo": 1001,
+  "amount": 300,
+  "pointAccType": "ACC"
+}
+
+<> 2022-06-14T204216.200.json
+<> 2022-06-14T204206.200.json
+<> 2022-06-14T204205.200.json
+<> 2022-06-14T204204.200.json
+<> 2022-06-14T204203.200.json
+<> 2022-06-14T204200.200.json
+<> 2022-06-14T200951.200.json
+<> 2022-06-14T200950.200.json
+<> 2022-06-14T200949.200.json
+<> 2022-06-14T200948.200.json
+<> 2022-06-14T200946.200.json
+<> 2022-06-14T200944.200.json
+<> 2022-06-14T200123.200.json
+
+### 적립
+POST http://localhost:8080/point
+Content-Type: application/json
+
+{
+  "memberNo": 1001,
+  "amount": 100,
+  "pointAccType": "ACC"
+}
+
+<> 2022-06-14T203858.200.json
+<> 2022-06-14T203704.200.json
+
+
+### 포인트 조회
+GET http://localhost:8080/point?memberNo=1001
+
+<> 2022-06-14T203710.200.json
+<> 2022-06-14T200208.200.json
+
+### 사용
+POST http://localhost:8080/point
+Content-Type: application/json
+
+{
+  "memberNo": 1001,
+  "amount": 10,
+  "pointAccType": "USE"
+}
+
+<> 2022-06-14T204411.200.json
+<> 2022-06-14T200126.200.json
+<> 2022-06-14T195803.200.json
+
+### 취소
+GET http://localhost:8080/rollback?pointHistId=2
+
+<> 2022-06-14T204356.500.json
+<> 2022-06-14T204245.500.json
+<> 2022-06-14T204232.500.json
+<> 2022-06-14T200159.200.json
+
+### 포인트 조회
+GET http://localhost:8080/point?memberNo=1001
+
+<> 2022-06-14T204250.200.json
+
+
+### 포인트 적립/사용 내역 조회
+GET http://localhost:8080/point/history?memberNo=1001&size=10
+
+<> 2022-06-14T204439.200.json
+<> 2022-06-14T204428.500.json
+<> 2022-06-14T204413.200.json
+<> 2022-06-14T204306.200.json
+<> 2022-06-14T204220.200.json
+<> 2022-06-14T204209.200.json
+<> 2022-06-14T203901.200.json
+<> 2022-06-14T203716.200.json
+<> 2022-06-14T201014.200.json
+<> 2022-06-14T200202.200.json
